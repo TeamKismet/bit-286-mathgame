@@ -7,22 +7,19 @@ using System.Web.Mvc;
 
 namespace TeamKismetMathGame.Models
 {
-    public class AdditionQuestion
+    public class SubtractionQuestion
     {
         [Key]
-        private int AQuestionID { get; set; }
+        private int SQuestionID { get; set; }
 
-        private int AdditionSkillCounter { get; set; }
+        private int SubtractAnswer { get; set; }
 
-        private int AddAnswer { get; set; }
+        private int SubtractionVariable { get; set; }
 
-        private int AddVariable { get; set; }
-
-        private bool ACorrect { get; set; }
+        private bool SCorrect { get; set; }
 
         Random rnd = new Random();
 
         SkillTracker Counter = new SkillTracker();
-
     }
 }

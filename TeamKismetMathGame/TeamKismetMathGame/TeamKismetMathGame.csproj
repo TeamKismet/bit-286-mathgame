@@ -163,6 +163,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AdditionQuestion.cs" />
+    <Compile Include="Models\GeometryQuestion.cs" />
+    <Compile Include="Models\SkillTracker.cs" />
+    <Compile Include="Models\SubtractionQuestion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
