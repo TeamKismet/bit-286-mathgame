@@ -30,6 +30,15 @@ namespace TeamKismetMathGame.Controllers
 
         public ActionResult AdditionPage()
         {
+            AdditionQuestion add = new AdditionQuestion();
+
+            int AP = 0;
+
+            if(add.ACorrect == true)
+            {
+                AP += 5;
+            }
+
             ViewBag.Message = "Your Addition page.";
 
             return View();

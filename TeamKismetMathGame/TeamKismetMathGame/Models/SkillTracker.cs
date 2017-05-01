@@ -13,13 +13,18 @@ namespace TeamKismetMathGame.Models
         [Key]
         public int SkillID { get; set; }
 
-        public int MathSkill { get; set; }
+        public int MathPoints { get; set; }
 
-        public int AdditionSkill { get; set; }
+        public int AdditionPoints { get; set; }
 
-        public int SubtractionSkill { get; set; }
+        public int SubtractionPoints { get; set; }
 
-        public int GeometrySkill { get; set; }
+        public int GeometryPoints { get; set; }
 
+    }
+
+    public class AdditionSkill
+    {
+        
     }
 }
