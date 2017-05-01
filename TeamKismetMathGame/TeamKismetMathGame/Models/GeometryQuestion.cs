@@ -10,13 +10,13 @@ namespace TeamKismetMathGame.Models
     public class GeometryQuestion
     {
         [Key]
-        private int GQuestionID { get; set; }
+        public int GQuestionID { get; set; }
 
-        private int GeometryAnswer { get; set; }
+        public int GeometryAnswer { get; set; }
 
-        private int GeometryVariable { get; set; }
+        public int GeometryVariable { get; set; }
 
-        private bool GCorrect { get; set; }
+        public bool GCorrect { get; set; }
 
         Random rnd = new Random();
 

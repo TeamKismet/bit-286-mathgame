@@ -11,15 +11,15 @@ namespace TeamKismetMathGame.Models
     public class SkillTracker
     {
         [Key]
-        private int SkillID { get; set; }
+        public int SkillID { get; set; }
 
-        private int MathSkill { get; set; }
+        public int MathSkill { get; set; }
 
-        private int AdditionSkill { get; set; }
+        public int AdditionSkill { get; set; }
 
-        private int SubtractionSkill { get; set; }
+        public int SubtractionSkill { get; set; }
 
-        private int GeometrySkill { get; set; }
+        public int GeometrySkill { get; set; }
 
     }
 }

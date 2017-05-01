@@ -10,15 +10,15 @@ namespace TeamKismetMathGame.Models
     public class AdditionQuestion
     {
         [Key]
-        private int AQuestionID { get; set; }
+        public int AQuestionID { get; set; }
 
-        private int AdditionSkillCounter { get; set; }
+        public int AdditionSkillCounter { get; set; }
 
-        private int AddAnswer { get; set; }
+        public int AddAnswer { get; set; }
 
-        private int AddVariable { get; set; }
+        public int AddVariable { get; set; }
 
-        private bool ACorrect { get; set; }
+        public bool ACorrect { get; set; }
 
         Random rnd = new Random();
 

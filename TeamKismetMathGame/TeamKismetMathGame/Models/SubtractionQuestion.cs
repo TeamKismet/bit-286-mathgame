@@ -10,13 +10,13 @@ namespace TeamKismetMathGame.Models
     public class SubtractionQuestion
     {
         [Key]
-        private int SQuestionID { get; set; }
+        public int SQuestionID { get; set; }
 
-        private int SubtractAnswer { get; set; }
+        public int SubtractAnswer { get; set; }
 
-        private int SubtractionVariable { get; set; }
+        public int SubtractionVariable { get; set; }
 
-        private bool SCorrect { get; set; }
+        public bool SCorrect { get; set; }
 
         Random rnd = new Random();
 
