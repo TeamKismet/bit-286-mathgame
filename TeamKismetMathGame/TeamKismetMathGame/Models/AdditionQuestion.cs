@@ -23,6 +23,5 @@ namespace TeamKismetMathGame.Models
         Random rnd = new Random();
 
         SkillTracker Counter = new SkillTracker();
-
     }
 }
