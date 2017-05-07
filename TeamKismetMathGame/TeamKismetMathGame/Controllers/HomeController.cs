@@ -28,8 +28,20 @@ namespace TeamKismetMathGame.Controllers
             return View();
         }
 
-        public ActionResult AdditionPage(AdditionQuestion add)
+        public ActionResult AdditionPage()
         {
+            Random rng = new Random();
+
+            int V1 = rng.Next(1, 11);
+
+            ViewBag.RNG = V1;
+
+            int V2 = rng.Next(V1, V1 + 10);
+
+            ViewBag.Answer = V2;
+
+            AdditionQuestion add = new AdditionQuestion();
+
             int AP = 0;
 
             if(add.ACorrect == true)

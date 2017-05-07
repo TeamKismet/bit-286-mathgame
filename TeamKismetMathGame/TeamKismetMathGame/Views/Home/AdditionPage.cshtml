@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "AdditionPage";
 }
 
@@ -9,18 +8,21 @@
 {
     @Html.AntiForgeryToken()
 
-    <div class="form-horizontal">
-        <h4>Visitor</h4>
+    <div class="form-horizontal" style="display:inline-block;">
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        
+        <span class="label label-default">@ViewBag.RNG</span>
+        <span class="label label-default"> + </span>
+            <input id="Text1" type="text" style="width:30px; margin:0 10px;"/>
+            <span class="label label-default"> = </span>
+            <span class="label label-default"> @ViewBag.Answer </span>
+        </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
                 <input type="submit" value="Submit" name="Submit" class="btn btn-default" />
                 <input type="submit" value="reset" name="reset" class="btn btn-default" />
             </div>
         </div>
-    </div>
 }
 
 <div>
@@ -30,3 +32,8 @@
 <div>
     @Html.ActionLink("Back to Login", "Login")
 </div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+}
