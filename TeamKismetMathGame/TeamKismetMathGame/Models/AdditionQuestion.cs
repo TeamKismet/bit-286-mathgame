@@ -16,12 +16,19 @@ namespace TeamKismetMathGame.Models
 
         public int AddAnswer { get; set; }
 
-        public int AddVariable { get; set; }
+        public int AddVariable;
 
         public bool ACorrect { get; set; }
 
         Random rnd = new Random();
 
         SkillTracker Counter = new SkillTracker();
-    }
+
+        public int addV( int AddVariable )
+        {
+            
+
+            return AddVariable;
+        }
+    }    
 }
