@@ -44,11 +44,19 @@ namespace TeamKismetMathGame.Controllers
 
             int AP = 0;
 
-            if(add.ACorrect == true)
+            ViewBag.AP = AP;
+
+            if (ViewBag.QA == V2-V1)
             {
                 AP += 5;
             }
 
+            //if(add.ACorrect == true)
+            //{
+            //    AP += 5;
+            //}
+
+            
             ViewBag.Message = "Your Addition page.";
 
             return View();
