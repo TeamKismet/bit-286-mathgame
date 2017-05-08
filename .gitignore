@@ -1,0 +1,8 @@
+*.mdf
+*.ldf
+TeamKismetMathGame/TeamKismetMathGame/bin/TeamKismetMathGame.dll
+TeamKismetMathGame/TeamKismetMathGame/App_Data/Kismet_Info.mdf
+TeamKismetMathGame/.vs/TeamKismetMathGame/v15/.suo
+TeamKismetMathGame/TeamKismetMathGame/App_Data/Kismet_Info.mdf
+TeamKismetMathGame/TeamKismetMathGame/App_Data/Kismet_Info_log.ldf
+TeamKismetMathGame/.vs/TeamKismetMathGame/v15/.suo
