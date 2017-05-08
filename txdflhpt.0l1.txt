@@ -1,0 +1,13 @@
+﻿Merge remote-tracking branch 'refs/remotes/origin/master' into JonBranch
+
+# Conflicts:
+#	TeamKismetMathGame/.vs/TeamKismetMathGame/v15/.suo
+#	TeamKismetMathGame/TeamKismetMathGame/App_Data/Kismet_Info.mdf
+#	TeamKismetMathGame/TeamKismetMathGame/App_Data/Kismet_Info_log.ldf
+#	TeamKismetMathGame/TeamKismetMathGame/bin/TeamKismetMathGame.dll
+#	TeamKismetMathGame/TeamKismetMathGame/bin/TeamKismetMathGame.pdb
+#	TeamKismetMathGame/TeamKismetMathGame/obj/Debug/TeamKismetMathGame.dll
+#	TeamKismetMathGame/TeamKismetMathGame/obj/Debug/TeamKismetMathGame.pdb
+
+added to git ignore
+
