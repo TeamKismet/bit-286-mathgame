@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="ee9afe6741124068b0fedcf62b2217e1" Name="Diagram1">
-        <EntityTypeShape EntityType="Kismet_InfoModel.Student" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Kismet_InfoModel.Student" Width="1.5" PointX="0.875" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
