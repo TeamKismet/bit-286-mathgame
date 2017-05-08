@@ -46,7 +46,7 @@ namespace TeamKismetMathGame.Controllers
 
             ViewBag.AP = AP;
 
-            if (ViewBag.QA == V2-V1)
+            if (ViewBag.QA == V2 - V1)
             {
                 AP += 5;
             }
@@ -56,9 +56,44 @@ namespace TeamKismetMathGame.Controllers
             //    AP += 5;
             //}
 
-            
+
             ViewBag.Message = "Your Addition page.";
 
+            return View();
+        }
+
+        public ActionResult SubtractionPage()
+        {
+            Random rng = new Random();
+
+            int VS1 = rng.Next(0, 11);
+
+            VS1 += 10;
+
+            ViewBag.RNG = VS1;
+
+            int VS2 = rng.Next(VS1 - 10, VS1);
+
+            ViewBag.Answer = VS2;
+
+            SubtractionQuestion add = new SubtractionQuestion();
+
+            int AP = 0;
+
+            ViewBag.AP = AP;
+
+            if (ViewBag.QSA == VS2 - VS1)
+            {
+                AP += 5;
+            }
+
+            //if(add.ACorrect == true)
+            //{
+            //    AP += 5;
+            //}
+
+
+            ViewBag.Message = "Your Subtraction page.";
             return View();
         }
     }
