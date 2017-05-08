@@ -82,7 +82,7 @@ namespace TeamKismetMathGame.Controllers
 
             ViewBag.AP = AP;
 
-            if (ViewBag.QSA == VS2 - VS1)
+            if (ViewBag.QSA == VS1 - VS2)
             {
                 AP += 5;
             }

@@ -12,15 +12,16 @@
     <div class="form-horizontal" style="display:inline-block;">
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <span class="label label-default">@ViewBag.RNG</span>
-        <span class="label label-default"> - </span>
-        <input id="Text1" type="text" style="width:30px; margin:0 10px;" value="@ViewBag.QS" />
-        <span class="label label-default"> = </span>
-        <span class="label label-default"> @ViewBag.Answer </span>
+        <span class="label label-default" style="font-size:28px;">@ViewBag.RNG</span>
+        <span class="label label-default" style="font-size:28px;"> - </span>
+        <input id="Text1" type="text" style="width:30px; margin:0 10px; font-size:28px;" value="@ViewBag.QS" />
+        <span class="label label-default" style="font-size:28px;"> = </span>
+        <span class="label label-default" style="font-size:28px;"> @ViewBag.Answer </span>
     </div>
-        <span class="label label-default"> @ViewBag.SP </span>
+        <span class="label label-default" style="font-size:28px;"> @ViewBag.SP </span>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
+                <br /><br />
                 <input type="submit" value="Submit" name="Submit" class="btn btn-default" />
                 <input type="submit" value="reset" name="reset" class="btn btn-default" />
             </div>
