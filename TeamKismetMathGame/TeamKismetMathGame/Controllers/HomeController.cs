@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+<<<<<<< HEAD
+=======
+using TeamKismetMathGame.Models;
+>>>>>>> refs/remotes/origin/HaakonBranch
 
 namespace TeamKismetMathGame.Controllers
 {
@@ -27,8 +31,77 @@ namespace TeamKismetMathGame.Controllers
             return View();
         }
 
+<<<<<<< HEAD
         public ActionResult Login()
         {
+=======
+        public ActionResult AdditionPage()
+        {
+            Random rng = new Random();
+
+            int V1 = rng.Next(1, 11);
+
+            ViewBag.RNG = V1;
+
+            int V2 = rng.Next(V1, V1 + 10);
+
+            ViewBag.Answer = V2;
+
+            AdditionQuestion add = new AdditionQuestion();
+
+            int AP = 0;
+
+            ViewBag.AP = AP;
+
+            if (ViewBag.QA == V2 - V1)
+            {
+                AP += 5;
+            }
+
+            //if(add.ACorrect == true)
+            //{
+            //    AP += 5;
+            //}
+
+
+            ViewBag.Message = "Your Addition page.";
+
+            return View();
+        }
+
+        public ActionResult SubtractionPage()
+        {
+            Random rng = new Random();
+
+            int VS1 = rng.Next(0, 11);
+
+            VS1 += 10;
+
+            ViewBag.RNG = VS1;
+
+            int VS2 = rng.Next(VS1 - 10, VS1);
+
+            ViewBag.Answer = VS2;
+
+            SubtractionQuestion add = new SubtractionQuestion();
+
+            int AP = 0;
+
+            ViewBag.AP = AP;
+
+            if (ViewBag.QSA == VS1 - VS2)
+            {
+                AP += 5;
+            }
+
+            //if(add.ACorrect == true)
+            //{
+            //    AP += 5;
+            //}
+
+
+            ViewBag.Message = "Your Subtraction page.";
+>>>>>>> refs/remotes/origin/HaakonBranch
             return View();
         }
     }
