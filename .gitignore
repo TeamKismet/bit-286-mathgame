@@ -1,5 +1,8 @@
 *.mdf
 *.ldf
+*.eot~HEAD
+*.ttf~refs_remotes_origin_HaakonBranch
+MathGameBIT286/*
 TeamKismetMathGame/TeamKismetMathGame/bin/TeamKismetMathGame.dll
 TeamKismetMathGame/TeamKismetMathGame/App_Data/Kismet_Info.mdf
 TeamKismetMathGame/.vs/TeamKismetMathGame/v15/.suo
@@ -11,5 +14,3 @@ TeamKismetMathGame/TeamKismetMathGame/Views/Web.config~refs_remotes_origin_Haako
 TeamKismetMathGame/TeamKismetMathGame/Web.config~HEAD
 TeamKismetMathGame/TeamKismetMathGame/TeamKismetMathGame.csproj~HEAD
 TeamKismetMathGame/TeamKismetMathGame/TeamKismetMathGame.csproj.user~refs_remotes_origin_HaakonBranch
-*.eot~HEAD
-*.ttf~refs_remotes_origin_HaakonBranch
