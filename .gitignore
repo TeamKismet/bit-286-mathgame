@@ -3,6 +3,7 @@
 *.eot~HEAD
 *.ttf~refs_remotes_origin_HaakonBranch
 MathGameBIT286/*
+TeamKismetMathGame/.vs/*
 TeamKismetMathGame/TeamKismetMathGame/bin/TeamKismetMathGame.dll
 TeamKismetMathGame/TeamKismetMathGame/App_Data/Kismet_Info.mdf
 TeamKismetMathGame/.vs/TeamKismetMathGame/v15/.suo
