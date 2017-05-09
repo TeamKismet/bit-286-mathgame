@@ -3,13 +3,10 @@
 *.eot~HEAD
 *.ttf~refs_remotes_origin_HaakonBranch
 MathGameBIT286/*
-TeamKismetMathGame/.vs/*
 TeamKismetMathGame/TeamKismetMathGame/bin/TeamKismetMathGame.dll
 TeamKismetMathGame/TeamKismetMathGame/App_Data/Kismet_Info.mdf
-TeamKismetMathGame/.vs/TeamKismetMathGame/v15/.suo
 TeamKismetMathGame/TeamKismetMathGame/App_Data/Kismet_Info.mdf
 TeamKismetMathGame/TeamKismetMathGame/App_Data/Kismet_Info_log.ldf
-TeamKismetMathGame/.vs/TeamKismetMathGame/v15/.suo
 TeamKismetMathGame/TeamKismetMathGame/Views/Web.config~HEAD
 TeamKismetMathGame/TeamKismetMathGame/Views/Web.config~refs_remotes_origin_HaakonBranch
 TeamKismetMathGame/TeamKismetMathGame/Web.config~HEAD
