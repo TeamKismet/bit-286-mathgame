@@ -26,5 +26,6 @@ namespace TeamKismetMathGame.Models
         }
     
         public virtual DbSet<Student> Students { get; set; }
+        public virtual DbSet<Teacher> Teachers { get; set; }
     }
 }

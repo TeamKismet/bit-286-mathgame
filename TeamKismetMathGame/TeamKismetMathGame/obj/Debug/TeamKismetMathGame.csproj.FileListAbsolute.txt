@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Scott\Source\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\ApplicationInsights.config
 C:\Users\Scott\Source\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csc.exe
 C:\Users\Scott\Source\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -61,3 +62,260 @@ C:\Users\Scott\Source\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGa
 C:\Users\Scott\Source\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.csprojResolveAssemblyReference.cache
 C:\Users\Scott\Source\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.dll
 C:\Users\Scott\Source\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.pdb
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\ApplicationInsights.config
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\vbc.exe
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\VBCSCompiler.exe
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csc.exe
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\TeamKismetMathGame.dll.config
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\TeamKismetMathGame.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\TeamKismetMathGame.pdb
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Antlr3.Runtime.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\EntityFramework.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\EntityFramework.SqlServer.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.Web.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.ApplicationInsights.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Newtonsoft.Json.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Net.Http.Formatting.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Helpers.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.WebHost.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Mvc.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Optimization.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Razor.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Deployment.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Razor.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\WebGrease.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\EntityFramework.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\EntityFramework.SqlServer.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.Web.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.ApplicationInsights.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Helpers.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Mvc.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Optimization.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Razor.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Deployment.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Razor.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Antlr3.Runtime.pdb
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Newtonsoft.Json.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Net.Http.Formatting.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.WebHost.xml
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.pdb
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csc.exe.config
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csc.rsp
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csi.exe
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csi.exe.config
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csi.rsp
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.AppContext.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Console.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.IO.Compression.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.IO.Pipes.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Claims.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Threading.Thread.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.ValueTuple.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Xml.XPath.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\vbc.exe.config
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\vbc.rsp
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.Web.XmlTransform.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\NuGet.Core.dll
+C:\Users\JonL_\Desktop\BIT 286\Repos\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.csprojResolveAssemblyReference.cache
+=======
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.csprojResolveAssemblyReference.cache
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\ApplicationInsights.config
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csc.exe
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\vbc.exe
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\VBCSCompiler.exe
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\TeamKismetMathGame.dll.config
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\TeamKismetMathGame.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\TeamKismetMathGame.pdb
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Antlr3.Runtime.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.Web.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Newtonsoft.Json.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Net.Http.Formatting.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Helpers.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.WebHost.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Mvc.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Optimization.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Razor.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Razor.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\WebGrease.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.Web.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Helpers.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Mvc.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Optimization.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Razor.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Razor.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Antlr3.Runtime.pdb
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\Newtonsoft.Json.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Net.Http.Formatting.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.WebHost.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\MathGame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.pdb
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\ApplicationInsights.config
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csc.exe
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\vbc.exe
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\VBCSCompiler.exe
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\TeamKismetMathGame.dll.config
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\TeamKismetMathGame.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\TeamKismetMathGame.pdb
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Antlr3.Runtime.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.Web.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Newtonsoft.Json.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Net.Http.Formatting.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Helpers.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.WebHost.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Mvc.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Optimization.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Razor.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Razor.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\WebGrease.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Antlr3.Runtime.pdb
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.Web.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\Newtonsoft.Json.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Helpers.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Mvc.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Optimization.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Razor.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.WebPages.Razor.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Net.Http.Formatting.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\System.Web.Http.WebHost.xml
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.csprojResolveAssemblyReference.cache
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\obj\Debug\TeamKismetMathGame.pdb
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csc.exe.config
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csc.rsp
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csi.exe
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csi.exe.config
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\csi.rsp
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.AppContext.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Console.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.IO.Compression.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Claims.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Threading.Thread.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.ValueTuple.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\vbc.exe.config
+C:\Users\Haakon Jakobson\Documents\BIT 286\bit-286-mathgame\TeamKismetMathGame\TeamKismetMathGame\bin\roslyn\vbc.rsp
+>>>>>>> refs/remotes/origin/HaakonBranch
