@@ -48,6 +48,11 @@ namespace TeamKismetMathGame.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Password")] Teacher teacher)
         {
+            while (db.Teachers.Find(teacher.Id) != null)
+            {
+                teacher.Id++;
+            }
+
             if (ModelState.IsValid)
             {
                 db.Teachers.Add(teacher);
@@ -80,11 +85,6 @@ namespace TeamKismetMathGame.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Password")] Teacher teacher)
         {
-            while (db.Students.Find(teacher.Id) != null)
-            {
-                teacher.Id++;
-            }
-
             if (ModelState.IsValid)
             {
                 db.Entry(teacher).State = EntityState.Modified;
