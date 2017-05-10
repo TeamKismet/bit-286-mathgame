@@ -78,13 +78,13 @@ namespace TeamKismetMathGame.Controllers
 
             SubtractionQuestion add = new SubtractionQuestion();
 
-            int AP = 0;
+            int SP = 0;
 
-            ViewBag.AP = AP;
+            ViewBag.SP = SP;
 
             if (ViewBag.QSA == VS1 - VS2)
             {
-                AP += 5;
+                SP += 5;
             }
 
             //if(add.ACorrect == true)
