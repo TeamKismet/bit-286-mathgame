@@ -48,7 +48,7 @@ namespace TeamKismetMathGame.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Geometry,Addition,Subtraction,TotalScore")] Student student)
         {
-            while(db.Students.Find(student.Id) != null)
+            while(db.Students.Find(student.Id) != null) //Loop checks for null IDs so no entries are overwritten
             {
                 student.Id++;
             }
