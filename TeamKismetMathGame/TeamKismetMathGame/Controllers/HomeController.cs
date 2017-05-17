@@ -39,27 +39,36 @@ namespace TeamKismetMathGame.Controllers
 
         public ActionResult AdditionPage()
         {
+            AdditionQuestion add = new AdditionQuestion();
+
             Random rng = new Random();
 
-            int V1 = rng.Next(1, 11);
+            if (add.AddVariable == null)
+            {
+                add.AddVariable = rng.Next(1, 11);
+            }
 
-            ViewBag.RNG = V1;
+            int V1 = add.AddVariable.Value;
 
-            int V2 = rng.Next(V1, V1 + 10);
+            ViewBag.RNG = add.AddVariable;
+
+            if (add.AddAnswer == null)
+            {
+                add.AddAnswer = rng.Next(V1, V1 + 10);
+            }
+
+            int V2 = add.AddAnswer.Value;
 
             ViewBag.Answer = V2;
 
-            AdditionQuestion add = new AdditionQuestion();
+            int AP = add.AdditionSkillCounter;
 
-            int AP = 0;
-
-            ViewBag.AP = AP;
-
-            if (ViewBag.QA == V2 - V1)
+            if (add.AddInput == V2 - V1)
             {
                 AP += 5;
             }
 
+            ViewBag.AP = AP;
             //if(add.ACorrect == true)
             //{
             //    AP += 5;
@@ -103,6 +112,22 @@ namespace TeamKismetMathGame.Controllers
 
 
             ViewBag.Message = "Your Subtraction page.";
+            return View();
+        }
+
+        public ActionResult AnswerPage()
+        {
+            int AP = 0;
+
+            int V2 = ViewBag.Answer;
+
+            int V1 = ViewBag.RNG;
+
+            if (ViewBag.QA == V2 - V1)
+            {
+                AP += 5;
+                return View("AnswerPage");
+            }
             return View();
         }
     }
