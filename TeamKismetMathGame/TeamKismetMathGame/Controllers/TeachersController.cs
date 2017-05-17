@@ -60,6 +60,11 @@ namespace TeamKismetMathGame.Controllers
                 return RedirectToAction("Index");
             }
 
+            //if (teacher.ConfirmPassword == teacher.Password)
+            //{
+            //    return View(db.Teachers);
+            //}
+
             return View(teacher);
         }
 
