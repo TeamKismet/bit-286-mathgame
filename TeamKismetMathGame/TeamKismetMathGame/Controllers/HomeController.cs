@@ -37,10 +37,8 @@ namespace TeamKismetMathGame.Controllers
             return View();
         }
 
-        public ActionResult AdditionPage()
+        public ActionResult AdditionPage(AdditionQuestion add)
         {
-            AdditionQuestion add = new AdditionQuestion();
-
             Random rng = new Random();
 
             if (add.AddVariable == null)
@@ -54,7 +52,7 @@ namespace TeamKismetMathGame.Controllers
 
             if (add.AddAnswer == null)
             {
-                add.AddAnswer = rng.Next(V1, V1 + 10);
+                add.AddAnswer = rng.Next(V1 + 1, V1 + 10);
             }
 
             int V2 = add.AddAnswer.Value;
@@ -63,9 +61,12 @@ namespace TeamKismetMathGame.Controllers
 
             int AP = add.AdditionSkillCounter;
 
+            ViewBag.QA = add.AddInput;
+
             if (add.AddInput == V2 - V1)
             {
                 AP += 5;
+                return View("AnswerPage");
             }
 
             ViewBag.AP = AP;
@@ -80,30 +81,39 @@ namespace TeamKismetMathGame.Controllers
             return View();
         }
 
-        public ActionResult SubtractionPage()
+        public ActionResult SubtractionPage( SubtractionQuestion sub)
         {
             Random rng = new Random();
 
-            int VS1 = rng.Next(0, 11);
-
-            VS1 += 10;
-
-            ViewBag.RNG = VS1;
-
-            int VS2 = rng.Next(VS1 - 10, VS1);
-
-            ViewBag.Answer = VS2;
-
-            SubtractionQuestion add = new SubtractionQuestion();
-
-            int SP = 0;
-
-            ViewBag.SP = SP;
-
-            if (ViewBag.QSA == VS1 - VS2)
+            if (sub.SubVariable == null)
             {
-                SP += 5;
+                sub.SubVariable = rng.Next(1, 11);
             }
+
+            int V1 = sub.SubVariable.Value;
+
+            ViewBag.RNG = sub.SubVariable;
+
+            if (sub.SubAnswer == null)
+            {
+                sub.SubAnswer = rng.Next(V1 + 1, V1 + 10);
+            }
+
+            int V2 = sub.SubAnswer.Value;
+
+            ViewBag.Answer = V2;
+
+            int AP = sub.SubSkillCounter;
+
+            ViewBag.QA = sub.SubInput;
+
+            if (sub.SubInput == V2 - V1)
+            {
+                AP += 5;
+                return View("AnswerPage");
+            }
+
+            ViewBag.AP = AP;
 
             //if(add.ACorrect == true)
             //{
