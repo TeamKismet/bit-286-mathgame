@@ -37,39 +37,55 @@ namespace TeamKismetMathGame.Controllers
             return View();
         }
 
-        public ActionResult AdditionPage(AdditionQuestion add)
+        //msdn session data .net core
+        /// <summary>
+        /// httpget for addition page
+        /// consider session data for question use counter.
+        /// </summary>
+        /// <returns></returns>
+
+        [HttpGet]
+        public ActionResult AdditionPage()
         {
+            AdditionQuestion add = new AdditionQuestion();
             Random rng = new Random();
-
-            if (add.AddVariable == null)
-            {
-                add.AddVariable = rng.Next(1, 11);
-            }
-
+            add.AddVariable = rng.Next(1, 11);
             int V1 = add.AddVariable.Value;
-
-            ViewBag.RNG = add.AddVariable;
-
-            if (add.AddAnswer == null)
-            {
-                add.AddAnswer = rng.Next(V1 + 1, V1 + 10);
-            }
-
+            add.AddAnswer = rng.Next(V1 + 1, V1 + 10);
             int V2 = add.AddAnswer.Value;
-
-            ViewBag.Answer = V2;
-
-            int AP = add.AdditionSkillCounter;
+            add.AdditionSkillCounter = 0;
 
             ViewBag.QA = add.AddInput;
 
-            if (add.AddInput == V2 - V1)
-            {
-                AP += 5;
-                return View("AnswerPage");
-            }
+            Session["AddVariable"] = add.AddVariable.Value;
+            Session["AddAnswer"] = add.AddAnswer.Value;
+            //Session["AddInput"] = add.AddInput.Value;
+            Session["AddSkill"] = add.AdditionSkillCounter;
 
-            ViewBag.AP = AP;
+            return RedirectToAction("AdditionPage", "Home", add);
+        }
+
+        [HttpPost]
+        public ActionResult AdditionPage( AdditionQuestion add )
+        {
+            ViewBag.RNG = Session["AddVariable"];
+            int V1 = Int32.Parse(Session["AddVariable"].ToString());
+
+            ViewBag.Answer = Session["AdedAnswer"];
+            int V2 = Int32.Parse(Session["AddAnswer"].ToString());
+
+            add.AddInput = ViewBag.QA;
+            int QA = Int32.Parse(Session["AddInput"].ToString());
+
+            int AP = add.AdditionSkillCounter;
+
+            if (QA == V2 - V1)
+                {
+                    AP += 5;
+                    return RedirectToAction("AnswerPage");
+                }
+
+            ViewBag.AP = add.AdditionSkillCounter;
             //if(add.ACorrect == true)
             //{
             //    AP += 5;
@@ -78,7 +94,7 @@ namespace TeamKismetMathGame.Controllers
 
             ViewBag.Message = "Your Addition page.";
 
-            return View();
+            return RedirectToAction("AdditionPage", "Home");
         }
 
         public ActionResult SubtractionPage( SubtractionQuestion sub)
@@ -127,17 +143,18 @@ namespace TeamKismetMathGame.Controllers
 
         public ActionResult AnswerPage()
         {
-            int AP = 0;
+            ViewBag.AP = 5;
 
-            int V2 = ViewBag.Answer;
+            ViewBag.SP = 5;
+            //int V2 = ViewBag.Answer;
 
-            int V1 = ViewBag.RNG;
+            //int V1 = ViewBag.RNG;
 
-            if (ViewBag.QA == V2 - V1)
-            {
-                AP += 5;
-                return View("AnswerPage");
-            }
+            //if (ViewBag.QA == V2 - V1)
+            //{
+            //    AP += 5;
+            //    return View("AnswerPage");
+            //}
             return View();
         }
     }
