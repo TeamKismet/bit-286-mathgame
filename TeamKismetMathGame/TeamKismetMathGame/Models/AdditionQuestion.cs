@@ -18,7 +18,7 @@ namespace TeamKismetMathGame.Models
 
         public int? AddVariable;
 
-        public int? AddInput { get; set; }
+        public int AddInput { get; set; }
 
         public bool ACorrect { get; set; }
 
