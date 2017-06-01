@@ -63,11 +63,19 @@ namespace TeamKismetMathGame.Controllers
 
             ViewBag.QA = add.AddInput;
 
-            if (add.AddInput == V2 - V1)
+            Session["addvariable"] = add.AddVariable;
+
+            Session["input"] = add.AddInput;
+
+            if (add.AddInput == (int)Session["V2"] - (int)Session["V1"])
             {
                 AP += 5;
-                return View("AnswerPage");
+                return RedirectToAction("AnswerPage");
             }
+
+            Session["V1"] = add.AddVariable;
+
+            Session["V2"] = add.AddAnswer;
 
             ViewBag.AP = AP;
             //if(add.ACorrect == true)
@@ -127,17 +135,21 @@ namespace TeamKismetMathGame.Controllers
 
         public ActionResult AnswerPage()
         {
-            int AP = 0;
+            //int AP = 0;
 
-            int V2 = ViewBag.Answer;
+            //int V2 = (int)Session["V2"];
 
-            int V1 = ViewBag.RNG;
+            //int V1 = (int)Session["V1"];
 
-            if (ViewBag.QA == V2 - V1)
-            {
-                AP += 5;
-                return View("AnswerPage");
-            }
+            ViewBag.QA = (int)Session["input"];
+
+            ViewBag.test = (int)Session["addvariable"];
+
+            //if (ViewBag.QA == V2 - V1)
+            //{
+            //    AP += 5;
+            //    return View("AnswerPage");
+            //}
             return View();
         }
     }
