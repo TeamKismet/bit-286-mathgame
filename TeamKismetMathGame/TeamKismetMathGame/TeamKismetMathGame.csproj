@@ -159,6 +159,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClassManagementController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Controllers\TeachersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -284,6 +285,9 @@
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Home\AnswerPage.cshtml" />
+    <Content Include="Views\Account\NewAccount.cshtml" />
+    <Content Include="Views\Account\StudentLogin.cshtml" />
+    <Content Include="Views\Account\TeacherLogin.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
