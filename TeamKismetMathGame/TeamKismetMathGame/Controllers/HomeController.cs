@@ -16,14 +16,14 @@ namespace TeamKismetMathGame.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Basic information about the Falling Water Elementry School Math Applicaiton.";
+            ViewBag.Message = "Basic information about 1st Grade Simulator 2017.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Currently the team involved in the creation of this Application can't be reached.";
 
             return View();
         }
