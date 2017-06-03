@@ -28,6 +28,7 @@
                 @Html.EditorFor(model => model.AddInput, new { htmlAttributes = new { @class = "form-control myInput" } })
                 <span class="label label-default" style="font-size:28px;"> = @ViewBag.Answer </span>
             </div>
+            <br/><br/><br/>
             <span class="label label-default" style="font-size:28px;"> @ViewBag.AP AP</span>
             @Html.ValidationMessageFor(model => model.AddInput, "", new { @class = "text-danger" })
                 <div class="form-group">

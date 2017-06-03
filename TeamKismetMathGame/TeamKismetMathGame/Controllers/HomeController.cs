@@ -16,7 +16,7 @@ namespace TeamKismetMathGame.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Basic information about the Falling Water Elementry School Math Applicaiton.";
 
             return View();
         }
@@ -135,14 +135,14 @@ namespace TeamKismetMathGame.Controllers
                     correct = "Correct";
 
                     AP += 5;
-
-                    ViewBag.QA = (int)Session["Ainput"];
-
-                    ViewBag.V1 = (int)Session["AV1"];
-
-                    ViewBag.V2 = (int)Session["AV2"];
                 }
             }
+
+            ViewBag.QA = (int)Session["Ainput"];
+
+            ViewBag.V1 = (int)Session["AV1"];
+
+            ViewBag.V2 = (int)Session["AV2"];
 
             ViewBag.correct = correct;
 
@@ -165,14 +165,15 @@ namespace TeamKismetMathGame.Controllers
                     correct = "Correct";
 
                     SP += 5;
-
-                    ViewBag.QA = (int)Session["Sinput"];
-
-                    ViewBag.V1 = (int)Session["SV1"];
-
-                    ViewBag.V2 = (int)Session["SV2"];
                 }
             }
+
+
+            ViewBag.QA = (int)Session["Sinput"];
+
+            ViewBag.V1 = (int)Session["SV1"];
+
+            ViewBag.V2 = (int)Session["SV2"];
 
             ViewBag.correct = correct;
 
