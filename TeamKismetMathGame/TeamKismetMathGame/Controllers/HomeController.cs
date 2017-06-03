@@ -16,14 +16,14 @@ namespace TeamKismetMathGame.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Basic information about 1st Grade Simulator 2017.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Currently the team involved in the creation of this Application can't be reached.";
 
             return View();
         }
@@ -135,14 +135,14 @@ namespace TeamKismetMathGame.Controllers
                     correct = "Correct";
 
                     AP += 5;
-
-                    ViewBag.QA = (int)Session["Ainput"];
-
-                    ViewBag.V1 = (int)Session["AV1"];
-
-                    ViewBag.V2 = (int)Session["AV2"];
                 }
             }
+
+            ViewBag.QA = (int)Session["Ainput"];
+
+            ViewBag.V1 = (int)Session["AV1"];
+
+            ViewBag.V2 = (int)Session["AV2"];
 
             ViewBag.correct = correct;
 
@@ -165,14 +165,15 @@ namespace TeamKismetMathGame.Controllers
                     correct = "Correct";
 
                     SP += 5;
-
-                    ViewBag.QA = (int)Session["Sinput"];
-
-                    ViewBag.V1 = (int)Session["SV1"];
-
-                    ViewBag.V2 = (int)Session["SV2"];
                 }
             }
+
+
+            ViewBag.QA = (int)Session["Sinput"];
+
+            ViewBag.V1 = (int)Session["SV1"];
+
+            ViewBag.V2 = (int)Session["SV2"];
 
             ViewBag.correct = correct;
 
