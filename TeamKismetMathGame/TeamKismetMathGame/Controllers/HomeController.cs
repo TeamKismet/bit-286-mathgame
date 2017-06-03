@@ -37,10 +37,8 @@ namespace TeamKismetMathGame.Controllers
             return View();
         }
 
-        public ActionResult AdditionPage()
+        public ActionResult AdditionPage(AdditionQuestion add)
         {
-            AdditionQuestion add = new AdditionQuestion();
-
             Random rng = new Random();
 
             if (add.AddVariable == null)
@@ -54,7 +52,7 @@ namespace TeamKismetMathGame.Controllers
 
             if (add.AddAnswer == null)
             {
-                add.AddAnswer = rng.Next(V1, V1 + 10);
+                add.AddAnswer = rng.Next(V1 + 1, V1 + 10);
             }
 
             int V2 = add.AddAnswer.Value;
@@ -63,71 +61,123 @@ namespace TeamKismetMathGame.Controllers
 
             int AP = add.AdditionSkillCounter;
 
-            if (add.AddInput == V2 - V1)
+            if (add.AddInput == 0)
             {
-                AP += 5;
+                Session["AV1"] = add.AddVariable;
+
+                Session["AV2"] = add.AddAnswer;
+
+                return View();
             }
 
+            Session["Ainput"] = add.AddInput;
+
             ViewBag.AP = AP;
-            //if(add.ACorrect == true)
-            //{
-            //    AP += 5;
-            //}
 
 
             ViewBag.Message = "Your Addition page.";
 
-            return View();
+            return RedirectToAction("AnswerPage");
         }
 
-        public ActionResult SubtractionPage()
+        public ActionResult SubtractionPage( SubtractionQuestion sub)
         {
             Random rng = new Random();
 
-            int VS1 = rng.Next(0, 11);
+            if (sub.SubVariable == null)
+            {
+                sub.SubVariable = rng.Next(1, 11);
+            }
 
-            VS1 += 10;
+            int V1 = sub.SubVariable.Value;
 
-            ViewBag.RNG = VS1;
+            ViewBag.RNG = sub.SubVariable;
 
-            int VS2 = rng.Next(VS1 - 10, VS1);
+            if (sub.SubAnswer == null)
+            {
+                sub.SubAnswer = rng.Next(V1 + 1, V1 + 10);
+            }
 
-            ViewBag.Answer = VS2;
+            int V2 = sub.SubAnswer.Value;
 
-            SubtractionQuestion add = new SubtractionQuestion();
+            ViewBag.Answer = V2;
 
-            int SP = 0;
+            int SP = sub.SubSkillCounter;
+
+            if (sub.SubInput == 0)
+            {
+                Session["SV1"] = sub.SubVariable;
+
+                Session["SV2"] = sub.SubAnswer;
+
+                return View();
+            }
+
+            Session["Sinput"] = sub.SubInput;
 
             ViewBag.SP = SP;
 
-            if (ViewBag.QSA == VS1 - VS2)
-            {
-                SP += 5;
-            }
-
-            //if(add.ACorrect == true)
-            //{
-            //    AP += 5;
-            //}
-
 
             ViewBag.Message = "Your Subtraction page.";
-            return View();
+            return RedirectToAction("SubtractionAnswerPage");
         }
 
         public ActionResult AnswerPage()
         {
             int AP = 0;
 
-            int V2 = ViewBag.Answer;
+            string correct = "Incorret";
 
-            int V1 = ViewBag.RNG;
-
-            if (ViewBag.QA == V2 - V1)
+            if (Session["Ainput"] != null)
             {
-                AP += 5;
-                return View("AnswerPage");
+                if ((int)Session["AV2"] - (int)Session["AV1"] == (int)Session["Ainput"])
+                {
+                    correct = "Correct";
+
+                    AP += 5;
+
+                    ViewBag.QA = (int)Session["Ainput"];
+
+                    ViewBag.V1 = (int)Session["AV1"];
+
+                    ViewBag.V2 = (int)Session["AV2"];
+                }
             }
+
+            ViewBag.correct = correct;
+
+            ViewBag.AP = AP;
+
+            return View();
+        }
+
+        public ActionResult SubtractionAnswerPage()
+        {
+            int SP = 0;
+
+            string correct = "Incorret";
+
+
+            if (Session["Sinput"] != null)
+            {
+                if ((int)Session["SV1"] + (int)Session["SV2"] == (int)Session["Sinput"])
+                {
+                    correct = "Correct";
+
+                    SP += 5;
+
+                    ViewBag.QA = (int)Session["Sinput"];
+
+                    ViewBag.V1 = (int)Session["SV1"];
+
+                    ViewBag.V2 = (int)Session["SV2"];
+                }
+            }
+
+            ViewBag.correct = correct;
+
+            ViewBag.SP = SP;
+
             return View();
         }
     }
