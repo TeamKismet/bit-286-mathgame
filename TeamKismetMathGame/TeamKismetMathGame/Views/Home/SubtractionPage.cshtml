@@ -45,12 +45,12 @@
         </div>
     </div>
 }
-<div class="btn btn-default">
-    @Html.ActionLink("Addition Game", "AdditionPage", "Home")
+<div>
+    @Html.ActionLink("Addition Game", "AdditionPage", "Home", new { @class = "btn btn-default" })
 </div>
 
 <div>
-    @Html.ActionLink("Back to Login", "StudentLogin", "Home")
+    @Html.ActionLink("Back to Login", "StudentLogin", "Home", new { @class = "btn btn-default" })
 </div>
 
 @section Scripts {

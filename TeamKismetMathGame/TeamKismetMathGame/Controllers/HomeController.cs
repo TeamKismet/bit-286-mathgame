@@ -74,7 +74,6 @@ namespace TeamKismetMathGame.Controllers
 
             ViewBag.AP = AP;
 
-
             ViewBag.Message = "Your Addition page.";
 
             return RedirectToAction("AnswerPage");
@@ -90,8 +89,6 @@ namespace TeamKismetMathGame.Controllers
             }
 
             int V1 = sub.SubVariable.Value;
-
-            
 
             if (sub.SubAnswer == null)
             {
@@ -118,7 +115,6 @@ namespace TeamKismetMathGame.Controllers
             Session["Sinput"] = sub.SubInput;
 
             ViewBag.SP = SP;
-
 
             ViewBag.Message = "Your Subtraction page.";
             return RedirectToAction("SubtractionAnswerPage");

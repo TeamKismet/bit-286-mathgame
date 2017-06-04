@@ -9,14 +9,13 @@
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     
-    <span class="label label-default" style="font-size:28px;"> You were asked if @ViewBag.V1 + ____ = @ViewBag.V2. </span>
+    <span class="label label-default" style="font-size:25px;"> You were asked if @ViewBag.V1 + __ = @ViewBag.V2. </span>
 
-    <span class="label label-default" style="font-size:28px;"> You Chose @ViewBag.QA </span>
+    <span class="label label-default" style="font-size:25px; margin: 10px 0px;"> You Chose @ViewBag.QA </span>
 </div>
 
-<span class="label label-default" style="font-size:28px;">Your answer was @ViewBag.Correct</span>
-<br /><br />
-<span class="label label-default" style="font-size:28px;">+ @ViewBag.AP AP</span>
+<span class="label label-default" style="font-size:25px; margin: 10px 0px;">Your answer was @ViewBag.Correct</span><br /><br />
+<span class="label label-default" style="font-size:28px; margin: 10px 0px;">+ @ViewBag.AP AP</span>
 <div class="form-group">
     <div class="col-md-offset-2 col-md-10">
         <br /><br />
@@ -24,9 +23,9 @@
 </div>
 
 <div>
-    @Html.ActionLink("Addition Game", "AdditionPage", "Home")
+    @Html.ActionLink("Addition Game", "AdditionPage", "Home", new { @class = "btn btn-default" })
 </div>
 
 <div>
-    @Html.ActionLink("Subtraction Game", "SubtractionPage", "Home")
+    @Html.ActionLink("Subtraction Game", "SubtractionPage", "Home", new { @class = "btn btn-default" })
 </div>
