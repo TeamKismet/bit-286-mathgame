@@ -14,16 +14,16 @@
         <p>
             If you are looking to go to the student login click the link bellow or the one in the navigation up top.
         </p>
-        <p><a class="btn btn-default" href="http://teamkismetmathgame.azurewebsites.net/Home/StudentLogin">Teacher Login Here &raquo;</a></p>
+        <p>@Html.ActionLink("Teacher Login >>", "TeacherLogin", "Home", new { @class = "btn btn-default"})</p>
     </div>
     <div class="col-md-4">
         <h2>Teacher Login</h2>
         <p>If you are a teacher you can login from the link listed bellow.</p>
-        <p><a class="btn btn-default" href="http://teamkismetmathgame.azurewebsites.net/Home/TeacherLogin">Student Login Here &raquo;</a></p>
+        <p>@Html.ActionLink("studnet Login >>", "StudentLogin", "Home", new { @class = "btn btn-default" })</p>
     </div>
     <div class="col-md-4">
         <h2>More about this application</h2>
         <p>If you want to learn more about this application you can click this link.</p>
-        <p><a class="btn btn-default" href="http://teamkismetmathgame.azurewebsites.net/Home/About">Learn more &raquo;</a></p>
+        <p>@Html.ActionLink("More Here >>", "About", "Home", new { @class = "btn btn-default" })</a></p>
     </div>
 </div>
