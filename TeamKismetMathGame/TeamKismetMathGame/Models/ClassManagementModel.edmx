@@ -16,6 +16,7 @@
           <Property Name="Addition" Type="int" />
           <Property Name="Subtraction" Type="int" />
           <Property Name="TotalScore" Type="int" />
+          <Property Name="Username" Type="text" />
         </EntityType>
         <EntityType Name="Teachers">
           <Key>
@@ -48,6 +49,7 @@
           <Property Name="Addition" Type="Int32" />
           <Property Name="Subtraction" Type="Int32" />
           <Property Name="TotalScore" Type="Int32" />
+          <Property Name="Username" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="Kismet_InfoEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Students" EntityType="Self.Student" />
@@ -74,6 +76,7 @@
           <EntitySetMapping Name="Students">
             <EntityTypeMapping TypeName="Kismet_InfoModel.Student">
               <MappingFragment StoreEntitySet="Students">
+                <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />

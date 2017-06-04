@@ -69,13 +69,13 @@ namespace TeamKismetMathGame.Views.Teachers
 
         //Login
         [HttpGet]
-        public ActionResult Login()
+        public ActionResult TeacherLogin()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult Login(Teacher teacher)
+        public ActionResult TeacherLogin(Teacher teacher)
         {
             using (Kismet_InfoEntities db = new Kismet_InfoEntities())
             {
@@ -103,7 +103,7 @@ namespace TeamKismetMathGame.Views.Teachers
 
             else
             {
-                return RedirectToAction("Login");
+                return RedirectToAction("TeacherLogin");
             }
         }
 
