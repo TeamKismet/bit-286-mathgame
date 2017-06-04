@@ -91,7 +91,7 @@ namespace TeamKismetMathGame.Controllers
 
             int V1 = sub.SubVariable.Value;
 
-            ViewBag.RNG = sub.SubVariable;
+            
 
             if (sub.SubAnswer == null)
             {
@@ -100,15 +100,17 @@ namespace TeamKismetMathGame.Controllers
 
             int V2 = sub.SubAnswer.Value;
 
-            ViewBag.Answer = V2;
+            ViewBag.RNG = V2;
+
+            ViewBag.Answer = V1;
 
             int SP = sub.SubSkillCounter;
 
             if (sub.SubInput == 0)
             {
-                Session["SV1"] = sub.SubVariable;
+                Session["SV1"] = sub.SubAnswer;
 
-                Session["SV2"] = sub.SubAnswer;
+                Session["SV2"] = sub.SubVariable;
 
                 return View();
             }
@@ -160,7 +162,7 @@ namespace TeamKismetMathGame.Controllers
 
             if (Session["Sinput"] != null)
             {
-                if ((int)Session["SV1"] + (int)Session["SV2"] == (int)Session["Sinput"])
+                if ((int)Session["SV2"] + (int)Session["Sinput"] == (int)Session["SV1"])
                 {
                     correct = "Correct";
 
