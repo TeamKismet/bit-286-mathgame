@@ -18,10 +18,12 @@
         <th>
             @Html.DisplayNameFor(model => model.LastName)
         </th>
-        @*<th>
-            @Html.DisplayNameFor(model => model.Password)
-        </th>*@
-        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Username)
+        </th>
     </tr>
 
 @foreach (var item in Model) {
@@ -32,9 +34,12 @@
         <td>
             @Html.DisplayFor(modelItem => item.LastName)
         </td>
-        @*<td>
-            @Html.DisplayFor(modelItem => item.Password)
-        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Username)
+        </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |

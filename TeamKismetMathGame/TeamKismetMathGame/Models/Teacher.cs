@@ -12,12 +12,13 @@
 namespace TeamKismetMathGame.Models
 {
 
-    using System;
+using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    
+public partial class Teacher
+{
 
-    public partial class Teacher
-    {
         [Key]
         public int Id { get; set; }
 
@@ -34,14 +35,15 @@ namespace TeamKismetMathGame.Models
         public string Username { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
-        [StringLength(255, ErrorMessage = "Must be between 6 and 255 characters", MinimumLength = 6)]
+        [StringLength(15, ErrorMessage = "Must be between 6 and 15 characters", MinimumLength = 6)]
         [DataType(DataType.Password)]
         public string Password { get; set; }
 
-        [StringLength(255, ErrorMessage = "Must be between 6 and 255 characters", MinimumLength = 6)]
-        [Compare("Password", ErrorMessage ="Please confirm your password.")]
+        [StringLength(15, ErrorMessage = "Must be between 6 and 15 characters", MinimumLength = 6)]
+        [Compare("Password", ErrorMessage = "Please confirm your password.")]
         [DataType(DataType.Password)]
         public string ConfirmPassword { get; set; }
+
     }
 
 }
