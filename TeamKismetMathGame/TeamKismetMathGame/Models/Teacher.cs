@@ -14,18 +14,36 @@ namespace TeamKismetMathGame.Models
 
 using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     
 public partial class Teacher
 {
 
-    public int Id { get; set; }
+        [Key]
+        public int Id { get; set; }
 
-    public string FirstName { get; set; }
+        [Required(ErrorMessage = "First name is required")]
+        public string FirstName { get; set; }
 
-    public string LastName { get; set; }
+        [Required(ErrorMessage = "Last name is required")]
+        public string LastName { get; set; }
 
-    public string Password { get; set; }
+        [EmailAddress(ErrorMessage = "Please enter a vaild email.")]
+        public string Email { get; set; }
 
-}
+        [Required(ErrorMessage = "Username is required.")]
+        public string Username { get; set; }
+
+        [Required(ErrorMessage = "Password is required")]
+        [StringLength(15, ErrorMessage = "Must be between 6 and 15 characters", MinimumLength = 6)]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+        [StringLength(15, ErrorMessage = "Must be between 6 and 15 characters", MinimumLength = 6)]
+        [Compare("Password", ErrorMessage = "Please confirm your password.")]
+        [DataType(DataType.Password)]
+        public string ConfirmPassword { get; set; }
+
+    }
 
 }

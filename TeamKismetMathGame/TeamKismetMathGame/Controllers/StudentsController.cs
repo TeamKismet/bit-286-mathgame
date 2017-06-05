@@ -10,17 +10,17 @@ using TeamKismetMathGame.Models;
 
 namespace TeamKismetMathGame.Controllers
 {
-    public class ClassManagementController : Controller
+    public class StudentsController : Controller
     {
         private Kismet_InfoEntities db = new Kismet_InfoEntities();
 
-        // GET: ClassManagement
+        // GET: Students
         public ActionResult Index()
         {
             return View(db.Students.ToList());
         }
 
-        // GET: ClassManagement/Details/5
+        // GET: Students/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -35,27 +35,34 @@ namespace TeamKismetMathGame.Controllers
             return View(student);
         }
 
-        // GET: ClassManagement/Create
+        // GET: Students/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: ClassManagement/Create
+        // POST: Students/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Geometry,Addition,Subtraction,TotalScore,Username")] Student student)
         {
-            while(db.Students.Find(student.Id) != null)
+            while (db.Students.Find(student.Id) != null)
             {
                 student.Id++;
             }
+
             if (ModelState.IsValid)
             {
-                db.Students.Add(student);
-                db.SaveChanges();
+                using (Kismet_InfoEntities db = new Kismet_InfoEntities())
+                {
+                    db.Students.Add(student);
+                    db.SaveChanges();
+                }
+
+                ModelState.Clear();
+                ViewBag.Message = student.FirstName + " " + student.LastName + " successfully registered.";
                 return RedirectToAction("Index");
             }
 
@@ -102,7 +109,7 @@ namespace TeamKismetMathGame.Controllers
             }
         }
 
-        // GET: ClassManagement/Edit/5
+        // GET: Students/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -117,7 +124,7 @@ namespace TeamKismetMathGame.Controllers
             return View(student);
         }
 
-        // POST: ClassManagement/Edit/5
+        // POST: Students/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -133,7 +140,7 @@ namespace TeamKismetMathGame.Controllers
             return View(student);
         }
 
-        // GET: ClassManagement/Delete/5
+        // GET: Students/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -148,7 +155,7 @@ namespace TeamKismetMathGame.Controllers
             return View(student);
         }
 
-        // POST: ClassManagement/Delete/5
+        // POST: Students/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

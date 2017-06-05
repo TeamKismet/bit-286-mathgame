@@ -1,4 +1,4 @@
-﻿@model IEnumerable<TeamKismetMathGame.Models.Teacher>
+﻿@model IEnumerable<TeamKismetMathGame.Models.Student>
 
 @{
     ViewBag.Title = "Index";
@@ -19,11 +19,21 @@
             @Html.DisplayNameFor(model => model.LastName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Email)
+            @Html.DisplayNameFor(model => model.Geometry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Addition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subtraction)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalScore)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Username)
         </th>
+        <th></th>
     </tr>
 
 @foreach (var item in Model) {
@@ -35,7 +45,16 @@
             @Html.DisplayFor(modelItem => item.LastName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Email)
+            @Html.DisplayFor(modelItem => item.Geometry)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Addition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subtraction)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TotalScore)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Username)

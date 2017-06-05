@@ -1,4 +1,4 @@
-﻿@model TeamKismetMathGame.Models.Teacher
+﻿@model TeamKismetMathGame.Models.Student
 
 @{
     ViewBag.Title = "Details";
@@ -8,7 +8,7 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Teacher</h4>
+    <h4>Student</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -28,11 +28,35 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Email)
+            @Html.DisplayNameFor(model => model.Geometry)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Email)
+            @Html.DisplayFor(model => model.Geometry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Addition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Addition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subtraction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subtraction)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalScore)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalScore)
         </dd>
 
         <dt>
@@ -41,22 +65,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.Username)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Password)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Password)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ConfirmPassword)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ConfirmPassword)
         </dd>
 
     </dl>

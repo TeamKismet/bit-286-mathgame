@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "LoggedIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Session["UserID"] != null)
+{
+    <h4>Hello @Session["Username"].ToString()</h4>
+}
+
+<div>
+    <a href="~/Home/AdditionPage" class="btn btn-default">Addition Game</a>
+</div>
+<div>
+    <a href="~/Home/SubtractionPage" class="btn btn-default">Subtraction Game</a>
+</div>

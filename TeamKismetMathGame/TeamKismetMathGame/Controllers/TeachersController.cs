@@ -8,7 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using TeamKismetMathGame.Models;
 
-namespace TeamKismetMathGame.Controllers
+namespace TeamKismetMathGame.Views.Teachers
 {
     public class TeachersController : Controller
     {
@@ -46,7 +46,7 @@ namespace TeamKismetMathGame.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Password")] Teacher teacher)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Email,Username,Password,ConfirmPassword")] Teacher teacher)
         {
             while (db.Teachers.Find(teacher.Id) != null)
             {
@@ -55,12 +55,56 @@ namespace TeamKismetMathGame.Controllers
 
             if (ModelState.IsValid)
             {
-                db.Teachers.Add(teacher);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                using (Kismet_InfoEntities db = new Kismet_InfoEntities())
+                {
+                    db.Teachers.Add(teacher);
+                    db.SaveChanges();
+                }
+                ModelState.Clear();
+                ViewBag.Message = teacher.FirstName + " " + teacher.LastName + " successfully registered.";
             }
 
             return View(teacher);
+        }
+
+        //Login
+        [HttpGet]
+        public ActionResult TeacherLogin()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult TeacherLogin(Teacher teacher)
+        {
+            using (Kismet_InfoEntities db = new Kismet_InfoEntities())
+            {
+                var usr = db.Teachers.Where(u => u.Username == teacher.Username && u.Password == teacher.Password).FirstOrDefault();
+                if (usr != null)
+                {
+                    Session["UserID"] = usr.Id.ToString();
+                    Session["Username"] = usr.Username.ToString();
+                    return RedirectToAction("LoggedIn");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "username or Password is incorrect.");
+                }
+            }
+            return View();
+        }
+
+        public ActionResult LoggedIn()
+        {
+            if (Session["UserID"] != null)
+            {
+                return View();
+            }
+
+            else
+            {
+                return RedirectToAction("TeacherLogin");
+            }
         }
 
         // GET: Teachers/Edit/5
@@ -83,7 +127,7 @@ namespace TeamKismetMathGame.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Password")] Teacher teacher)
+        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Email,Username,Password,ConfirmPassword")] Teacher teacher)
         {
             while (db.Students.Find(teacher.Id) != null)
             {
