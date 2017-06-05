@@ -12,6 +12,7 @@ namespace TeamKismetMathGame.Controllers
 {
     public class ClassManagementController : Controller
     {
+        /*
         private Kismet_InfoEntities db = new Kismet_InfoEntities();
 
         // GET: ClassManagement
@@ -166,6 +167,6 @@ namespace TeamKismetMathGame.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
-        }
+        }*/
     }
 }
