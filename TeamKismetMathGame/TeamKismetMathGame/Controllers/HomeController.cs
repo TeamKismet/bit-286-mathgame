@@ -140,7 +140,7 @@ namespace TeamKismetMathGame.Controllers
 
                     QCorrect = 1;
 
-                    QIncorrect = 0;
+                    QIncorrect = 9;
 
                     AP += 5;
                 }
@@ -175,7 +175,7 @@ namespace TeamKismetMathGame.Controllers
 
             double QCorrect = 2;
 
-            double QIncorrect = 3;
+            double QIncorrect = 8;
 
             double questionCnt = 10;
 
@@ -190,7 +190,7 @@ namespace TeamKismetMathGame.Controllers
 
                     QCorrect = 7;
 
-                    QIncorrect = 1;
+                    QIncorrect = 3;
 
                     SP += 5;
                 }
