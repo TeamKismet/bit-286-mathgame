@@ -79,7 +79,7 @@ namespace TeamKismetMathGame.Controllers
             return RedirectToAction("AnswerPage");
         }
 
-        public ActionResult SubtractionPage( SubtractionQuestion sub)
+        public ActionResult SubtractionPage(SubtractionQuestion sub)
         {
             Random rng = new Random();
 
@@ -124,6 +124,12 @@ namespace TeamKismetMathGame.Controllers
         {
             int AP = 0;
 
+            double QCorrect = 956;
+
+            double QIncorrect = 320;
+
+            double questionCnt = 1276;
+
             string correct = "Incorret";
 
             if (Session["Ainput"] != null)
@@ -132,9 +138,15 @@ namespace TeamKismetMathGame.Controllers
                 {
                     correct = "Correct";
 
+                    QCorrect = 1;
+
+                    QIncorrect = 0;
+
                     AP += 5;
                 }
             }
+
+            double Grade = Math.Round((QCorrect / questionCnt), 2);
 
             ViewBag.QA = (int)Session["Ainput"];
 
@@ -146,12 +158,26 @@ namespace TeamKismetMathGame.Controllers
 
             ViewBag.AP = AP;
 
+            ViewBag.QC = QCorrect;
+
+            ViewBag.QI = QIncorrect;
+
+            ViewBag.QCnt = questionCnt;
+
+            ViewBag.Grade = Grade * 100;
+
             return View();
         }
 
         public ActionResult SubtractionAnswerPage()
         {
             int SP = 0;
+
+            double QCorrect = 2;
+
+            double QIncorrect = 3;
+
+            double questionCnt = 10;
 
             string correct = "Incorret";
 
@@ -162,10 +188,15 @@ namespace TeamKismetMathGame.Controllers
                 {
                     correct = "Correct";
 
+                    QCorrect = 7;
+
+                    QIncorrect = 1;
+
                     SP += 5;
                 }
             }
 
+            double Grade = Math.Round((QCorrect / questionCnt), 2);
 
             ViewBag.QA = (int)Session["Sinput"];
 
@@ -176,6 +207,14 @@ namespace TeamKismetMathGame.Controllers
             ViewBag.correct = correct;
 
             ViewBag.SP = SP;
+
+            ViewBag.QC = QCorrect;
+
+            ViewBag.QI = QIncorrect;
+
+            ViewBag.QCnt = questionCnt;
+
+            ViewBag.Grade = Grade * 100;
 
             return View();
         }

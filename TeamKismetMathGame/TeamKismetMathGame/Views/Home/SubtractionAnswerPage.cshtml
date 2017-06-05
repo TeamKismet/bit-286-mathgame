@@ -12,11 +12,14 @@
     <span class="label label-default" style="font-size:25px;"> You Chose @ViewBag.QA </span>
 </div>
 
-<span class="label label-default" style="font-size:25px;">Your answer was @ViewBag.Correct</span><br /><br/>
+<span class="label label-default" style="font-size:25px;">Your answer was @ViewBag.Correct</span><br /><br />
 <span class="label label-default" style="font-size:28px;">+ @ViewBag.SP SP</span>
 <div class="form-group">
     <div class="col-md-offset-2 col-md-10">
-        <br /><br />
+        <span class="label label-default" style="font-size:18px;">+ @ViewBag.QC Correct answers</span> <br /><br />
+        <span class="label label-default" style="font-size:18px;">+ @ViewBag.QI Incorrect answers</span> <br /><br />
+        <span class="label label-default" style="font-size:18px;">+ @ViewBag.QCnt Question answered</span> <br /><br />
+        <span class="label label-default" style="font-size:18px;"> @ViewBag.Grade % grade</span> <br /><br />
     </div>
 </div>
 
