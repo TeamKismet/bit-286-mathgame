@@ -12,11 +12,16 @@ namespace TeamKismetMathGame.Models
         [Key]
         public int SQuestionID { get; set; }
 
-        public int SubtractAnswer { get; set; }
+        public int SubSkillCounter;
 
-        public int SubtractionVariable { get; set; }
+        public int? SubAnswer { get; set; }
+
+        public int? SubVariable;
+
+        public int SubInput { get; set; }
 
         public bool SCorrect { get; set; }
+
 
         Random rnd = new Random();
 
