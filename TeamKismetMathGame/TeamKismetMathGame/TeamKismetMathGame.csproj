@@ -159,12 +159,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClassManagementController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-<<<<<<< HEAD
     <Compile Include="Controllers\StudentsController.cs" />
-=======
-    <Compile Include="Controllers\TeacherController.cs" />
-    <Compile Include="Controllers\TeachersController.cs" />
->>>>>>> refs/remotes/origin/master
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -240,7 +235,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <None Include="Properties\PublishProfiles\TeamKismetMathGame - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -283,7 +277,6 @@
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Home\AnswerPage.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Teachers\TeacherLogin.cshtml" />
     <Content Include="Views\Teachers\LoggedIn.cshtml" />
     <Content Include="Views\Teachers\Index.cshtml" />
@@ -298,12 +291,6 @@
     <Content Include="Views\Students\Index.cshtml" />
     <Content Include="Views\Students\StudentLogin.cshtml" />
     <Content Include="Views\Students\LoggedIn.cshtml" />
-=======
-    <Content Include="Views\Account\NewAccount.cshtml" />
-    <Content Include="Views\Account\StudentLogin.cshtml" />
-    <Content Include="Views\Account\TeacherLogin.cshtml" />
-    <Content Include="Views\Home\SubtractionAnswerPage.cshtml" />
->>>>>>> refs/remotes/origin/master
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
