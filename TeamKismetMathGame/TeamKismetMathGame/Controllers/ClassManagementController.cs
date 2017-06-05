@@ -46,7 +46,7 @@ namespace TeamKismetMathGame.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Geometry,Addition,Subtraction,TotalScore")] Student student)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Geometry,Addition,Subtraction,TotalScore,Username")] Student student)
         {
             while(db.Students.Find(student.Id) != null)
             {
@@ -60,6 +60,46 @@ namespace TeamKismetMathGame.Controllers
             }
 
             return View(student);
+        }
+
+        //Login
+        [HttpGet]
+        public ActionResult StudentLogin()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult StudentLogin(Student student)
+        {
+            using (Kismet_InfoEntities db = new Kismet_InfoEntities())
+            {
+                var usr = db.Students.Where(u => u.Username == student.Username).FirstOrDefault();
+                if (usr != null)
+                {
+                    Session["UserID"] = usr.Id.ToString();
+                    Session["Username"] = usr.Username.ToString();
+                    return RedirectToAction("LoggedIn");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "username is incorrect.");
+                }
+            }
+            return View();
+        }
+
+        public ActionResult LoggedIn()
+        {
+            if (Session["UserID"] != null)
+            {
+                return View();
+            }
+
+            else
+            {
+                return RedirectToAction("StudentLogin");
+            }
         }
 
         // GET: ClassManagement/Edit/5
@@ -82,7 +122,7 @@ namespace TeamKismetMathGame.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Geometry,Addition,Subtraction,TotalScore")] Student student)
+        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,Geometry,Addition,Subtraction,TotalScore,Username")] Student student)
         {
             if (ModelState.IsValid)
             {

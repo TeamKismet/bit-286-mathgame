@@ -32,6 +32,8 @@ public partial class Student
 
     public Nullable<int> TotalScore { get; set; }
 
+    public string Username { get; set; }
+
 }
 
 }
