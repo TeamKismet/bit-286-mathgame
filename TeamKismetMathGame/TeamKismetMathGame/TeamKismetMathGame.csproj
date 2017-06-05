@@ -291,6 +291,7 @@
     <Content Include="Views\Students\Index.cshtml" />
     <Content Include="Views\Students\StudentLogin.cshtml" />
     <Content Include="Views\Students\LoggedIn.cshtml" />
+    <Content Include="Views\Home\SubtractionAnswerPage.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
