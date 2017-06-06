@@ -1,4 +1,10 @@
-﻿using System;
+﻿//Code By: Jonathan Lopez
+//Class: BIT 286
+//DATE: SPRING 2017
+
+//NOTE: This is an auto-generated class based on the Student Model. There have been some code additions made to this file to add functionality for Student Login
+
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -48,11 +54,14 @@ namespace TeamKismetMathGame.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Geometry,Addition,Subtraction,TotalScore,Username")] Student student)
         {
+
+            //Adds student to a new row in the database. Without this while loop the application crashes.
             while (db.Students.Find(student.Id) != null)
             {
                 student.Id++;
             }
 
+            //Adds new student to the database then clears the input field. 
             if (ModelState.IsValid)
             {
                 using (Kismet_InfoEntities db = new Kismet_InfoEntities())
@@ -69,13 +78,15 @@ namespace TeamKismetMathGame.Controllers
             return View(student);
         }
 
-        //Login
+        //Student Login View
         [HttpGet]
         public ActionResult StudentLogin()
         {
             return View();
         }
-
+        
+        //Creates session for Student Login
+        //Checks for the inputed student username in the database. If student username is matches then adds current user to the session and redirects to logged in page.
         [HttpPost]
         public ActionResult StudentLogin(Student student)
         {
@@ -96,6 +107,7 @@ namespace TeamKismetMathGame.Controllers
             return View();
         }
 
+        //Creates feedback view for successfull login
         public ActionResult LoggedIn()
         {
             if (Session["UserID"] != null)
