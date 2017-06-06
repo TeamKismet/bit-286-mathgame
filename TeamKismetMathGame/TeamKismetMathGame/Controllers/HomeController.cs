@@ -28,39 +28,61 @@ namespace TeamKismetMathGame.Controllers
             return View();
         }
 
-        public ActionResult StudentLogin()
-        {
-            return View();
-        }
-        public ActionResult TeacherLogin()
-        {
-            return View();
-        }
+        //These are from the old placement of the teacher and student Login Pages
 
+        //public ActionResult StudentLogin()
+        //{
+        //    return View();
+        //}
+        //public ActionResult TeacherLogin()
+        //{
+        //    return View();
+        //}
+
+
+        //This uses the class I created at the beginning of the BIT 286 for things like the addvariable, addAnswer and AddInput. I ment to do more with them, but for now they act mostly like model views
         public ActionResult AdditionPage(AdditionQuestion add)
         {
+            //I start by making a random variable so the page can make random numbers I probably don't need it because there is one in the class, but at the time I was worried that 
+            //   it would change variable up on me more so I just made one on the page controllers.
             Random rng = new Random();
 
+            //I made these if statements so that the addVariables would only reload random numbers if they where null. This is a little silly looking back because suprize every time the page loads
+            //   the variables are null. Any wat the addVaraible is made a random number between 1 and 10.
             if (add.AddVariable == null)
             {
                 add.AddVariable = rng.Next(1, 11);
             }
 
+            //I create V1 which stands for Variable 1 which is always the variable on the left of the equasion. I give it the addVariable's value so I can pass it to my next random number generator
+            // use it as part of he range.
             int V1 = add.AddVariable.Value;
 
+            //I am now passing that addVariable into the viewbag for RNG becuase it is a Random Number Generated Variable and the other vairable is an answer to the question but not the actual input.
             ViewBag.RNG = add.AddVariable;
 
+
+            //Once again I make a check to make sure AddAnswer to make sure it isn't null. Then generate a number base off a 1 to 10 range added to the value of the first variable. this way I never 
+            // get a negative number.
             if (add.AddAnswer == null)
             {
                 add.AddAnswer = rng.Next(V1 + 1, V1 + 10);
             }
 
+            //Now I add it to a Variable 2 to use in the Viewbag for the answer part of the question. 
             int V2 = add.AddAnswer.Value;
 
             ViewBag.Answer = V2;
 
+            //Original I was thinking that there wold be a skill counter variable that counted would keep track of the Addition points. There would be another one for the Subtration game.
+            //  Later I changed this idea so that you would have a table that kept track of the number of right and wrong answers as well as total question count and the full grade and the 
+            //  artificail point system so that the children would always see a possitive variable represented in the game. However at the end of the day the database never had those changes add
+            //  Without those additions I never got to add in this space to show the addition points on the question page as well as the answer page.
             int AP = add.AdditionSkillCounter;
 
+            //This if statement take advantage of the fact that the addInput always comes out as 0 if you don't put one in the input box. So it reads the page and initially runs through the page
+            // until it hits this and uses it as a chance to fill in the question variables into the session state variables for Addition Variable 1 and 2. Then it returns the page so you can add an
+            // input.
             if (add.AddInput == 0)
             {
                 Session["AV1"] = add.AddVariable;
@@ -70,19 +92,25 @@ namespace TeamKismetMathGame.Controllers
                 return View();
             }
 
+            //After the Input is different than the default and you have interacted with the page it can move passed and be passed into another Session state variable. this one for Addition Input.
             Session["Ainput"] = add.AddInput;
 
+            //then I add the prior info into the Addition point viewbag.
             ViewBag.AP = AP;
 
             ViewBag.Message = "Your Addition page.";
-
+            
+            //After all of this I redirect the page to the Answer page where it can show the results.
             return RedirectToAction("AnswerPage");
         }
 
-        public ActionResult SubtractionPage( SubtractionQuestion sub)
+
+        //A lot of this is very similar to the addition page so I will be more brief. I pass in the SubtractionQuestion into this action for the same reason as I added the additionQuestion.
+        public ActionResult SubtractionPage(SubtractionQuestion sub)
         {
             Random rng = new Random();
 
+            //all of the SubVariable or SubAnswer's are part of the SubtrationQuestion class which does what the additionQuesiton class does for addition but for the subtraction game
             if (sub.SubVariable == null)
             {
                 sub.SubVariable = rng.Next(1, 11);
@@ -97,12 +125,14 @@ namespace TeamKismetMathGame.Controllers
 
             int V2 = sub.SubAnswer.Value;
 
+            //This is the first real deviation from the addition page I flip where the V2 and V1 go so they end up in the reverse positions of where they would for the addition game.
             ViewBag.RNG = V2;
 
             ViewBag.Answer = V1;
 
             int SP = sub.SubSkillCounter;
 
+            //Here I place the SubAnswer in Subtraction Variable 1 and SubVariable in Subtraction Variable 2 once again in there opposite position from the addition game.
             if (sub.SubInput == 0)
             {
                 Session["SV1"] = sub.SubAnswer;
@@ -117,24 +147,48 @@ namespace TeamKismetMathGame.Controllers
             ViewBag.SP = SP;
 
             ViewBag.Message = "Your Subtraction page.";
+
+            //Here I send the question to a second answer page because prior to that the sessions variables would get mixed up.
             return RedirectToAction("SubtractionAnswerPage");
         }
 
+
+        //here is where I actually answer whether the addition page was right or wrong and grade it. I recently re-added that original idea of keeping track of the question counts and right or wrong.
+        //   Right now I have test variables in here, but it acutally grades acurratly based off the correct answers and the number of questions. I probably need the number of incorrect answers, but
+        //   I figured it would be something that teachers would apprieciate as a clear way of seeing that without needing to proform some calculation.
         public ActionResult AnswerPage()
         {
+            //I originally put the Addition points as 0 because I wanted an easy way of seeing right or wrong numarically without having to think about it for fast testing.
             int AP = 0;
 
+            //the Q stands for Question and they are doubles to make the math round easier. It probably works with int, but when I used Decimal I had trouble so I just used double.
+            double QCorrect = 956;
+
+            double QIncorrect = 320;
+
+            double questionCnt = 1276;
+
+            //This is to add into the result statement that tells the student if they are right or wrong.
             string correct = "Incorret";
 
+            //I had several situations where a null variable would lead to problems on the page so I just made it so it had to perform a check for the AddInput not being null.
+            //After that it checks if the value of the Addvariable 1 subracted from AddVariable 2 is equal to the Addition input that the user put in. If it is the input is correct and
+            //    it will change the string for correct to 'correct' and then it adds more test different test numbers to the Q variables and changes the AP to +5.
             if (Session["Ainput"] != null)
             {
                 if ((int)Session["AV2"] - (int)Session["AV1"] == (int)Session["Ainput"])
                 {
                     correct = "Correct";
 
+                    QCorrect = 1;
+
+                    QIncorrect = 9;
+
                     AP += 5;
                 }
             }
+
+            double Grade = Math.Round((QCorrect / questionCnt), 2);
 
             ViewBag.QA = (int)Session["Ainput"];
 
@@ -146,12 +200,26 @@ namespace TeamKismetMathGame.Controllers
 
             ViewBag.AP = AP;
 
+            ViewBag.QC = QCorrect;
+
+            ViewBag.QI = QIncorrect;
+
+            ViewBag.QCnt = questionCnt;
+
+            ViewBag.Grade = Grade * 100;
+
             return View();
         }
 
         public ActionResult SubtractionAnswerPage()
         {
             int SP = 0;
+
+            double QCorrect = 2;
+
+            double QIncorrect = 8;
+
+            double questionCnt = 10;
 
             string correct = "Incorret";
 
@@ -162,10 +230,15 @@ namespace TeamKismetMathGame.Controllers
                 {
                     correct = "Correct";
 
+                    QCorrect = 7;
+
+                    QIncorrect = 3;
+
                     SP += 5;
                 }
             }
 
+            double Grade = Math.Round((QCorrect / questionCnt), 2);
 
             ViewBag.QA = (int)Session["Sinput"];
 
@@ -176,6 +249,14 @@ namespace TeamKismetMathGame.Controllers
             ViewBag.correct = correct;
 
             ViewBag.SP = SP;
+
+            ViewBag.QC = QCorrect;
+
+            ViewBag.QI = QIncorrect;
+
+            ViewBag.QCnt = questionCnt;
+
+            ViewBag.Grade = Grade * 100;
 
             return View();
         }

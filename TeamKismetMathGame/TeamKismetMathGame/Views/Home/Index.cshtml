@@ -14,16 +14,16 @@
         <p>
             If you are looking to go to the student login click the link bellow or the one in the navigation up top.
         </p>
-        <p>@Html.ActionLink("Teacher Login >>", "TeacherLogin", "Teachers", new { @class = "btn btn-default"})</p>
+        <p><a href="~/Students/StudentLogin" class="btn btn-default">Student Login</a></p>
     </div>
     <div class="col-md-4">
         <h2>Teacher Login</h2>
         <p>If you are a teacher you can login from the link listed bellow.</p>
-        <p>@Html.ActionLink("Student Login >>", "StudentLogin", "Students", new { @class = "btn btn-default" })</p>
+        <p><a href="~/Teachers/TeacherLogin" class="btn btn-default">Teacher Login</a></p>
     </div>
     <div class="col-md-4">
         <h2>More about this application</h2>
         <p>If you want to learn more about this application you can click this link.</p>
-        <p>@Html.ActionLink("More Here >>", "About", "Home", new { @class = "btn btn-default" })</a></p>
+        <p>@Html.ActionLink("More Here >>", "About", "Home", new { @class = "btn btn-default" })</p>
     </div>
 </div>

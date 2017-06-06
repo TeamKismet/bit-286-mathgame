@@ -253,6 +253,14 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Tests\AdditionCorrect.html" />
+    <Content Include="Tests\AdditionFail.html" />
+    <Content Include="Tests\StudentInfoAccess.html" />
+    <Content Include="Tests\StudentLoginFail.html" />
+    <Content Include="Tests\StudentLoginSuccess.html" />
+    <Content Include="Tests\SubtractionCorrect.html" />
+    <Content Include="Tests\SubtractionFail.html" />
+    <Content Include="Tests\TeacherLoginSuccess.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -291,6 +299,7 @@
     <Content Include="Views\Students\Index.cshtml" />
     <Content Include="Views\Students\StudentLogin.cshtml" />
     <Content Include="Views\Students\LoggedIn.cshtml" />
+    <Content Include="Views\Home\SubtractionAnswerPage.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
