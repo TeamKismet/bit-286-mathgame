@@ -9,11 +9,13 @@ namespace TeamKismetMathGame.Controllers
 {
     public class HomeController : Controller
     {
+        //Main view or menu page
         public ActionResult Index()
         {
             return View();
         }
 
+        //about pages with some minor changes from the original so it wasn't exactly like the template
         public ActionResult About()
         {
             ViewBag.Message = "Basic information about 1st Grade Simulator 2017.";
@@ -21,6 +23,7 @@ namespace TeamKismetMathGame.Controllers
             return View();
         }
 
+        //Changes to the contact page, but I chose not to show any actual contact info with it being live now.
         public ActionResult Contact()
         {
             ViewBag.Message = "Currently the team involved in the creation of this Application can't be reached.";
@@ -188,8 +191,14 @@ namespace TeamKismetMathGame.Controllers
                 }
             }
 
+            //At this point I wanted to make the grade calculation happen between the number of questions and correct answers. After some thought if I had some more time I would make the calculation
+            //  for number of questions not based on a counter but a calcuation of both the right and wrong answers. Maybe later after I get the site connected to the database correctly.
+            //Any way it is a double so it can round up to the nearest tenth place decimal.
             double Grade = Math.Round((QCorrect / questionCnt), 2);
 
+            //These are all the different Math variable viewbags. I put them in to better show the data and how it works on the view. In reality I would probably not show the children the number of 
+            //  incorrect and correct answers as well as the grade. I might show how many question they've answered and I would also show the number of math points they have to show the amount of
+            //  progress they've made.
             ViewBag.QA = (int)Session["Ainput"];
 
             ViewBag.V1 = (int)Session["AV1"];
@@ -206,13 +215,18 @@ namespace TeamKismetMathGame.Controllers
 
             ViewBag.QCnt = questionCnt;
 
+            //THe grade is multiplied by 100 so it can be shown as a pecentage.
             ViewBag.Grade = Grade * 100;
 
             return View();
         }
-
+        
+        //Once again this is really the same as the first Answer page, but with some minor code changes. I will probably with more time shrink this down to some if statement in the original answer page
+        //  but for now this was an quicker solution than working that through at the time.
         public ActionResult SubtractionAnswerPage()
         {
+            //Just like the other answer page I create some test variables for the Q or question variables and then I make the test variables for the Subtraction Points so if the question is correct
+            // the points can be added to or if it is incorrect it can be kept at the base 0.
             int SP = 0;
 
             double QCorrect = 2;
@@ -226,6 +240,8 @@ namespace TeamKismetMathGame.Controllers
 
             if (Session["Sinput"] != null)
             {
+                //The difference between the answer page and the subtraction answer page here is that I am adding the input and the second variable to check if the answer is equal
+                //  the number I am subtracting from. if it is then the question is correct and I change the test varaibles and add 5 to the Subtraction points.
                 if ((int)Session["SV2"] + (int)Session["Sinput"] == (int)Session["SV1"])
                 {
                     correct = "Correct";
@@ -238,6 +254,7 @@ namespace TeamKismetMathGame.Controllers
                 }
             }
 
+            //Once again thsi is making the decimal grade point variable and bellow I am taking the session variables and other test variables into viewbags so they can easily be seen.
             double Grade = Math.Round((QCorrect / questionCnt), 2);
 
             ViewBag.QA = (int)Session["Sinput"];
