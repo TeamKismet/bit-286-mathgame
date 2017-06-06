@@ -83,6 +83,9 @@ namespace TeamKismetMathGame.Controllers
             //  Without those additions I never got to add in this space to show the addition points on the question page as well as the answer page.
             int AP = add.AdditionSkillCounter;
 
+            //I brought this further up so that the addition points can be given to the viewbag before the view return so that the AP points can be viewed on the page.
+            ViewBag.AP = AP;
+
             //This if statement take advantage of the fact that the addInput always comes out as 0 if you don't put one in the input box. So it reads the page and initially runs through the page
             // until it hits this and uses it as a chance to fill in the question variables into the session state variables for Addition Variable 1 and 2. Then it returns the page so you can add an
             // input.
@@ -97,9 +100,6 @@ namespace TeamKismetMathGame.Controllers
 
             //After the Input is different than the default and you have interacted with the page it can move passed and be passed into another Session state variable. this one for Addition Input.
             Session["Ainput"] = add.AddInput;
-
-            //then I add the prior info into the Addition point viewbag.
-            ViewBag.AP = AP;
 
             ViewBag.Message = "Your Addition page.";
             
@@ -135,6 +135,9 @@ namespace TeamKismetMathGame.Controllers
 
             int SP = sub.SubSkillCounter;
 
+            //the view page for he SP has to be above the view return so that it can be shown on the view
+            ViewBag.SP = SP;
+
             //Here I place the SubAnswer in Subtraction Variable 1 and SubVariable in Subtraction Variable 2 once again in there opposite position from the addition game.
             if (sub.SubInput == 0)
             {
@@ -146,8 +149,6 @@ namespace TeamKismetMathGame.Controllers
             }
 
             Session["Sinput"] = sub.SubInput;
-
-            ViewBag.SP = SP;
 
             ViewBag.Message = "Your Subtraction page.";
 
