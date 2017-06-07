@@ -165,20 +165,15 @@ namespace TeamKismetMathGame.Controllers
             //I originally put the Addition points as 0 because I wanted an easy way of seeing right or wrong numarically without having to think about it for fast testing.
             int AP = 0;
 
-<<<<<<< HEAD
-=======
             //the Q stands for Question and they are doubles to make the math round easier. It probably works with int, but when I used Decimal I had trouble so I just used double.
->>>>>>> refs/remotes/origin/master
             double QCorrect = 956;
 
             double QIncorrect = 320;
 
             double questionCnt = 1276;
 
-<<<<<<< HEAD
-=======
+
             //This is to add into the result statement that tells the student if they are right or wrong.
->>>>>>> refs/remotes/origin/master
             string correct = "Incorret";
 
             //I had several situations where a null variable would lead to problems on the page so I just made it so it had to perform a check for the AddInput not being null.
@@ -192,20 +187,12 @@ namespace TeamKismetMathGame.Controllers
 
                     QCorrect = 1;
 
-<<<<<<< HEAD
-                    QIncorrect = 0;
-=======
                     QIncorrect = 9;
->>>>>>> refs/remotes/origin/master
 
                     AP += 5;
                 }
             }
 
-<<<<<<< HEAD
-            double Grade = Math.Round((QCorrect / questionCnt), 2);
-
-=======
             //At this point I wanted to make the grade calculation happen between the number of questions and correct answers. After some thought if I had some more time I would make the calculation
             //  for number of questions not based on a counter but a calcuation of both the right and wrong answers. Maybe later after I get the site connected to the database correctly.
             //Any way it is a double so it can round up to the nearest tenth place decimal.
@@ -214,7 +201,6 @@ namespace TeamKismetMathGame.Controllers
             //These are all the different Math variable viewbags. I put them in to better show the data and how it works on the view. In reality I would probably not show the children the number of 
             //  incorrect and correct answers as well as the grade. I might show how many question they've answered and I would also show the number of math points they have to show the amount of
             //  progress they've made.
->>>>>>> refs/remotes/origin/master
             ViewBag.QA = (int)Session["Ainput"];
 
             ViewBag.V1 = (int)Session["AV1"];
@@ -231,10 +217,7 @@ namespace TeamKismetMathGame.Controllers
 
             ViewBag.QCnt = questionCnt;
 
-<<<<<<< HEAD
-=======
             //THe grade is multiplied by 100 so it can be shown as a pecentage.
->>>>>>> refs/remotes/origin/master
             ViewBag.Grade = Grade * 100;
 
             return View();
@@ -250,11 +233,7 @@ namespace TeamKismetMathGame.Controllers
 
             double QCorrect = 2;
 
-<<<<<<< HEAD
-            double QIncorrect = 3;
-=======
             double QIncorrect = 8;
->>>>>>> refs/remotes/origin/master
 
             double questionCnt = 10;
 
@@ -271,22 +250,14 @@ namespace TeamKismetMathGame.Controllers
 
                     QCorrect = 7;
 
-<<<<<<< HEAD
-                    QIncorrect = 1;
-=======
                     QIncorrect = 3;
->>>>>>> refs/remotes/origin/master
 
                     SP += 5;
                 }
             }
 
-<<<<<<< HEAD
-            double Grade = Math.Round((QCorrect/questionCnt), 2);
-=======
             //Once again thsi is making the decimal grade point variable and bellow I am taking the session variables and other test variables into viewbags so they can easily be seen.
             double Grade = Math.Round((QCorrect / questionCnt), 2);
->>>>>>> refs/remotes/origin/master
 
             ViewBag.QA = (int)Session["Sinput"];
 
