@@ -8,6 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+//Code By: Jonathan Lopez
+//Class: BIT 286
+//DATE: SPRING 2017
+
+//NOTE: This is an auto-generated class based on the Teacher table of the database. Attributes have been added to this file to create validation.
 
 namespace TeamKismetMathGame.Models
 {

@@ -1,4 +1,10 @@
-﻿using System;
+﻿//Code By: Jonathan Lopez
+//Class: BIT 286
+//DATE: SPRING 2017
+
+//NOTE: This is an auto-generated class based on the Student Model. There have been some code additions made to this file to add functionality for Teacher Login
+
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -48,11 +54,13 @@ namespace TeamKismetMathGame.Views.Teachers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,FirstName,LastName,Email,Username,Password,ConfirmPassword")] Teacher teacher)
         {
+            //Add teacher to new row in the database. This loop is needed to prevent database from crashing.
             while (db.Teachers.Find(teacher.Id) != null)
             {
                 teacher.Id++;
             }
 
+            //Adds new teacher to the database, clears input fields, then creats a feedback message upon successfuly registration.
             if (ModelState.IsValid)
             {
                 using (Kismet_InfoEntities db = new Kismet_InfoEntities())
@@ -67,13 +75,14 @@ namespace TeamKismetMathGame.Views.Teachers
             return View(teacher);
         }
 
-        //Login
+        //Create default view for Teacher Login
         [HttpGet]
         public ActionResult TeacherLogin()
         {
             return View();
         }
 
+        //POST request for Teacher login, add teacher to session
         [HttpPost]
         public ActionResult TeacherLogin(Teacher teacher)
         {
@@ -94,6 +103,8 @@ namespace TeamKismetMathGame.Views.Teachers
             return View();
         }
 
+        //Create view for feedback page successful login
+        //If Teacher hasn't been successfully added to the session then it redirects back to the Teacher Login page.
         public ActionResult LoggedIn()
         {
             if (Session["UserID"] != null)
