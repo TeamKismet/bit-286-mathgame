@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Code By: Haakon Jakobson
+//Class: BIT 286
+//DATE: SPRING 2017
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
